@@ -1,3 +1,4 @@
+import 'package:bitsoft_flutter/routing/route_names.dart';
 import 'package:bitsoft_flutter/widgets/navigation_drawer/navigation_drawer_header.dart';
 import 'package:flutter/material.dart';
 
@@ -22,8 +23,8 @@ class NavigationDrawer extends StatelessWidget {
         child: Column(
           children: const [
             NavigationDrawerHeader(),
-            DrawerItem('Episodes', Icons.videocam),
-            DrawerItem('About', Icons.help),
+            DrawerItem('Episodes', Icons.videocam, episodesRoute),
+            DrawerItem('About', Icons.help, aboutRoute),
           ],
         ));
   }

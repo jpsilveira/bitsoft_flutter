@@ -5,8 +5,14 @@ class AboutView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('About'),
+    return Container(
+      color: Colors.red,
+      child: Center(
+        child: Text(
+          'About',
+          style: TextStyle(color: Colors.black),
+        ),
+      ),
     );
   }
 }
