@@ -1,5 +1,4 @@
 import 'package:bitsoft_flutter/constants/app_colors.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NavigationDrawerHeader extends StatelessWidget {
@@ -13,14 +12,11 @@ class NavigationDrawerHeader extends StatelessWidget {
       alignment: Alignment.center,
       child: Column(
         mainAxisSize: MainAxisSize.min,
-        children: const [
+        children: <Widget>[
           Text(
             'SKILL UP NOW',
             style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w800,
-              color: Colors.white,
-            ),
+                fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
           ),
           Text(
             'TAP HERE',

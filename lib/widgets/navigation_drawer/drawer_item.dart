@@ -1,4 +1,4 @@
-import 'package:bitsoft_flutter/widgets/navigation_bar/navbar_item.dart';
+import 'package:bitsoft_flutter/widgets/navbar_item/navbar_item.dart';
 import 'package:flutter/material.dart';
 
 class DrawerItem extends StatelessWidget {
@@ -21,7 +21,7 @@ class DrawerItem extends StatelessWidget {
           const SizedBox(
             width: 30,
           ),
-          NavBarItem(title, navigationPath),
+          NavBarItem(title, navigationPath, icon: Icons.help),
         ],
       ),
     );

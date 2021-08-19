@@ -1,7 +1,7 @@
 import 'package:bitsoft_flutter/routing/route_names.dart';
+import 'package:bitsoft_flutter/widgets/navbar_item/navbar_item.dart';
 import 'package:flutter/material.dart';
 
-import 'navbar_item.dart';
 import 'navbar_logo.dart';
 
 class NavigationBarTabletDesktop extends StatelessWidget {
@@ -9,20 +9,20 @@ class NavigationBarTabletDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       height: 100,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          const NavBarLogo(),
+        children: <Widget>[
+          NavBarLogo(),
           Row(
             mainAxisSize: MainAxisSize.min,
-            children: const [
-              NavBarItem('Episodes', episodesRoute),
+            children: <Widget>[
+              NavBarItem('Episodes', episodesRoute, icon: Icons.videocam),
               SizedBox(
                 width: 60,
               ),
-              NavBarItem('About', aboutRoute),
+              NavBarItem('About', aboutRoute, icon: Icons.help),
             ],
           )
         ],

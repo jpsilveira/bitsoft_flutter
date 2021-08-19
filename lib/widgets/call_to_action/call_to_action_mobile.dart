@@ -2,8 +2,8 @@ import 'package:bitsoft_flutter/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CallToActionMobile extends StatelessWidget {
-  const CallToActionMobile(this.title, {Key? key}) : super(key: key);
   final String title;
+  const CallToActionMobile(this.title);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class CallToActionMobile extends StatelessWidget {
       alignment: Alignment.center,
       child: Text(
         title,
-        style: const TextStyle(
+        style: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w800,
           color: Colors.white,

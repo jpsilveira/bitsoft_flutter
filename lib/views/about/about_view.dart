@@ -7,12 +7,6 @@ class AboutView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.red,
-      child: Center(
-        child: Text(
-          'About',
-          style: TextStyle(color: Colors.black),
-        ),
-      ),
     );
   }
 }

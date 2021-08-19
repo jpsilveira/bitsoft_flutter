@@ -10,7 +10,7 @@ class HomeContentMobile extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.center,
-      children: const [
+      children: <Widget>[
         CourseDetails(),
         SizedBox(
           height: 100,
