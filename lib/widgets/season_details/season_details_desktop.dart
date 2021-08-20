@@ -27,7 +27,7 @@ class SeasonDetailsDesktop extends StatelessWidget {
               details.description,
               style: descriptionTextStyle(sizingInformation.deviceScreenType),
             ),
-          )
+          ),
         ],
       ),
     );

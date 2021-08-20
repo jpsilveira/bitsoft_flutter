@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 class CallToActionTabletDesktop extends StatelessWidget {
   final String title;
-  const CallToActionTabletDesktop(this.title);
+  final Color color;
+  const CallToActionTabletDesktop(this.title, this.color);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class CallToActionTabletDesktop extends StatelessWidget {
         style: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w800,
-          color: Colors.white,
+          color: color,
         ),
       ),
       decoration: BoxDecoration(

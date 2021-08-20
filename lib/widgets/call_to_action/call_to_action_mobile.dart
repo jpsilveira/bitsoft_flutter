@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 class CallToActionMobile extends StatelessWidget {
   final String title;
-  const CallToActionMobile(this.title);
+  final Color color;
+  const CallToActionMobile(this.title, this.color);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class CallToActionMobile extends StatelessWidget {
         style: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w800,
-          color: Colors.white,
+          color: color,
         ),
       ),
       decoration: BoxDecoration(
