@@ -9,17 +9,17 @@ class NavigationBarTabletDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 100,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          NavBarLogo(),
+          const NavBarLogo(),
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               NavBarItem('Episodes', episodesRoute, icon: Icons.videocam),
-              SizedBox(
+              const SizedBox(
                 width: 60,
               ),
               NavBarItem('About', aboutRoute, icon: Icons.help),

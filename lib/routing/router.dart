@@ -9,13 +9,13 @@ import 'route_names.dart';
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case homeRoute:
-      return _getPageRoute(HomeView(), settings);
+      return _getPageRoute(const HomeView(), settings);
     case aboutRoute:
-      return _getPageRoute(AboutView(), settings);
+      return _getPageRoute(const AboutView(), settings);
     case episodesRoute:
-      return _getPageRoute(EpisodesView(), settings);
+      return _getPageRoute(const EpisodesView(), settings);
     default:
-      return _getPageRoute(HomeView(), settings);
+      return _getPageRoute(const HomeView(), settings);
   }
 }
 

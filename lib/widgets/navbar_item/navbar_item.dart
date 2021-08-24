@@ -11,7 +11,8 @@ class NavBarItem extends StatelessWidget {
   final String title;
   final String navigationPath;
   final IconData icon;
-  const NavBarItem(this.title, this.navigationPath, {required this.icon});
+  NavBarItem(this.title, this.navigationPath, {Key? key, required this.icon})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

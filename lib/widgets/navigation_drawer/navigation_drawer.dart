@@ -11,7 +11,7 @@ class NavigationDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 300,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.white,
         boxShadow: [
           BoxShadow(color: Colors.black12, blurRadius: 16),
@@ -19,7 +19,7 @@ class NavigationDrawer extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          NavigationDrawerHeader(),
+          const NavigationDrawerHeader(),
           // BONUS: Combine the UI for this widget with the NavBarItem and make it responsive.
           // The UI for the current DrawerItem shows when it's in mobile, else it shows the NavBarItem ui.
           NavBarItem(

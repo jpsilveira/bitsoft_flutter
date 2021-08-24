@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'episode_item.dart';
 
 class EpisodesList extends StatelessWidget {
+  EpisodesList({Key? key}) : super(key: key);
+
   final episodes = [
     EpisodeItemModel(
       title: 'À Espera de um Milagre',

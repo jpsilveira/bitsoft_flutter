@@ -13,7 +13,7 @@ class EpisodesView extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.max,
       children: <Widget>[
-        SizedBox(
+        const SizedBox(
           height: 100,
         ),
         SeasonDetails(
@@ -23,7 +23,7 @@ class EpisodesView extends StatelessWidget {
                 'This season covers the absolute basics of Flutter Web Dev to get us up and running with a basic web app.',
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 50,
         ),
         EpisodesList(),

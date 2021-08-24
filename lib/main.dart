@@ -5,10 +5,12 @@ import 'views/layout_template/layout_template.dart';
 
 void main() {
   setupLocator();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Open Sans'),
       ),
-      home: LayoutTemplate(),
+      home: const LayoutTemplate(),
     );
   }
 }

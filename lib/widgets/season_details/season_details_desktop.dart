@@ -19,7 +19,7 @@ class SeasonDetailsDesktop extends StatelessWidget {
             details.title,
             style: titleTextStyle(sizingInformation.deviceScreenType),
           ),
-          SizedBox(
+          const SizedBox(
             width: 50,
           ),
           Expanded(

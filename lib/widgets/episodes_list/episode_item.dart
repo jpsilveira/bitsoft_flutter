@@ -35,7 +35,7 @@ class EpisodeItem extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     model.title,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 14,
                     ),
@@ -43,7 +43,7 @@ class EpisodeItem extends StatelessWidget {
                   ),
                   Text(
                     '${model.duration} minutes',
-                    style: TextStyle(fontSize: 10),
+                    style: const TextStyle(fontSize: 10),
                   )
                 ],
               ),

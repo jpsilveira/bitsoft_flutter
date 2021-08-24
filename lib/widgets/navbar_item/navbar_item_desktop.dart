@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 class NavBarItemTabletDesktop extends StatelessWidget {
   final NavBarItemModel model;
-  const NavBarItemTabletDesktop({required this.model});
+  const NavBarItemTabletDesktop({Key? key, required this.model})
+      : super(key: key);
 
   @override
   Widget build(
@@ -11,7 +12,7 @@ class NavBarItemTabletDesktop extends StatelessWidget {
   ) {
     return Text(
       model.title,
-      style: TextStyle(fontSize: 18),
+      style: const TextStyle(fontSize: 18),
     );
   }
 }

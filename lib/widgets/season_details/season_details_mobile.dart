@@ -17,7 +17,7 @@ class SeasonDetailsMobile extends StatelessWidget {
             details.title,
             style: titleTextStyle(sizingInformation.deviceScreenType),
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Text(

@@ -8,7 +8,7 @@ import 'call_to_action_tablet_desktop.dart';
 class CallToAction extends StatelessWidget {
   final String title;
 
-  CallToAction(this.title);
+  const CallToAction(this.title);
 
   @override
   Widget build(BuildContext context) {

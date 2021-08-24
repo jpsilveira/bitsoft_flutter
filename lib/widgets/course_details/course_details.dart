@@ -14,7 +14,7 @@ class CourseDetails extends StatelessWidget {
                 ? TextAlign.left
                 : TextAlign.center;
 
-        return Container(
+        return SizedBox(
           width: 600,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,7 +25,7 @@ class CourseDetails extends StatelessWidget {
                 style: titleTextStyle(sizingInformation.deviceScreenType),
                 textAlign: textAlignment,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Text(
